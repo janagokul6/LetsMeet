@@ -149,7 +149,7 @@ a {
   border: none;
 }
 
-#members__button:hover svg > path,
+#members__button:hover svg>path,
 #chat__button:hover svg,
 .nav__link:hover svg {
   fill: #845695;
@@ -159,6 +159,44 @@ a {
   width: 0;
   height: 0;
 }
+.landing__btn{
+  display: block;
+  background-color: #845695;
+  color: white;
+  padding: 14px 40px;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5% auto 0 auto;
+  width: fit-content;
+  width: "-moz-fit-content"
+}
+
+.feature {
+  display: flex;
+  margin: 5%;
+}
+#landing__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#landing__img {
+max-width: 80%;
+opacity: 0.6;
+}
+
+
+.feature__img {
+  min-width: 40%;
+  aspect-ratio: 16/9;
+  margin: 5px 20px;
+}
+
 
 @media (max-width: 640px) {
   #members__button {
@@ -169,6 +207,7 @@ a {
     width: 1.5rem;
     height: 1.5rem;
   }
+
   .nav__link,
   #create__room__btn {
     font-size: 0;
@@ -183,5 +222,19 @@ a {
 
   #create__room__btn:hover {
     background-color: transparent;
+  }
+
+  .feature {
+    flex-direction: column;
+    width: 100%;
+  }
+  #landing__img {
+    max-width: 100%;
+   
+    }
+  .landing__btn{
+    padding: 8px 15px;
+    text-align: center;
+    margin: 9% auto 0 auto;
   }
 }
